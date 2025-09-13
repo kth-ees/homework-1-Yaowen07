@@ -4,6 +4,23 @@ module bin2bcd (
   output logic carry
 );
   // …
-  // Add your description here
+  always_comb begin
+    case(binary)
+      4'd0: begin bcd=4'b0000; carry=1'b0;end
+      4'd1: begin bcd=4'b0000; carry=1'b0;end// Add your description here
+      4'd2: begin bcd=4'b0000; carry=1'b0;end
+      4'd3: begin bcd=4'b0000; carry=1'b0;end
+      4'd4: begin bcd=4'b0000; carry=1'b0;end
+      4'd5: begin bcd=4'b0000; carry=1'b0;end
+      4'd6: begin bcd=4'b0000; carry=1'b0;end
+      4'd7: begin bcd=4'b0000; carry=1'b0;end
+      4'd8: begin bcd=4'b0000; carry=1'b0;end
+      4'd9: begin bcd=4'b0000; carry=1'b0;end
+      4'd10: begin bcd=4'b0000; carry=1'b1;end
+      4'd11: begin bcd=4'b0000; carry=1'b1;end
+      4'd12: begin bcd=4'b0000; carry=1'b1;end
+      4'd13: begin bcd=4'b0000; carry=1'b1;end
+      4'd14: begin bcd=4'b0000; carry=1'b1;end
+      4'd15: begin bcd=4'b0000; carry=1'b1;end
   // …
 endmodule
