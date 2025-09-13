@@ -3,6 +3,9 @@ module decoder (
   output logic [15:0] one_hot
 );
   // …
-  // Add your description here
+ always_comb begin
+   one_hot = 16'b0;
+   one_hot[binary]=1'b1;
+ end// Add your description here
   // …
 endmodule
